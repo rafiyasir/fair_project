@@ -67,9 +67,13 @@
       <!-- Work -->
       <section id="work" class="bg-dark text-white text-center">
         <h2 class="display-4">We Work For You</h2>
+        {%if contents %}
+            {% for content in contents %}
         <h4>{{content.about_content_3}}</h4>
+        {% endfor %}
+            {% endif %}
         <hr>
-        <a href="listings.html" class="btn btn-secondary text-white btn-lg">View Our Claim List</a>
+        <a href="{% url 'claims' %}" class="btn btn-secondary text-white btn-lg">View Our Claim List</a>
       </section>
     
       <!-- Team -->

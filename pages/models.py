@@ -11,5 +11,5 @@ class Page(models.Model):
     about_content_1 = models.TextField()
     about_photo = models.ImageField(upload_to='photos/pages/%Y/%m/%d/')
     about_content_2 = models.TextField()
-    about_content_2 = models.TextField()
+    about_content_3 = models.TextField()
     list_date = models.DateTimeField(default=datetime.now,)
