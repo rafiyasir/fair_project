@@ -72,19 +72,19 @@ img {
 /* page transiton */
 #para-1 {
   transform: translateX(-1800px);
-  animation: text1 2s forwards ease-in 4.5s;
+  animation: text1 3s forwards ease-in 4.5s;
   text-align: justify;
 }
 
 #para-2 {
   transform: translateX(-1800px);
-  animation: text2 2s forwards ease-in 5.5s;
+  animation: text2 3.3s forwards ease-in 5.7s;
   text-align: justify;
 }
 
 #para-3 {
   transform: translateX(-1800px);
-  animation: text3 2s forwards ease-in 6.5s;
+  animation: text3 3.7s forwards ease-in 6.7s;
   text-align: justify;
 }
 
