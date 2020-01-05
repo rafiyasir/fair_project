@@ -44,48 +44,48 @@
           <img src="{{ listing.photo_main.url }}" alt="" class="img-main img-fluid mb-3">
           <!-- Fields -->
           <div class="row mb-5 fields">
-            <div class="col-md-6">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item text-secondary">
-                  <i class="fas fa-pencil-alt"></i> {{listing.point_main}}
+            <div class="col-md-12">
+              <ul class="list-group list-group-flush" style="text-align: justify;">
+                <li class="list-group-item text-primary lead">
+                  <i class="fas fa-pencil-alt"></i> {{listing.para_main}}
                 </li>
-                {% if listing.point_1 %}
-                <li class="list-group-item text-secondary">
-                  <i class="fas fa-pencil-alt"></i> {{listing.point_1}}
-                </li>
-                {% endif %}
-                {% if listing.point_2 %}
-                <li class="list-group-item text-secondary">
-                  <i class="fas fa-pencil-alt"></i> {{listing.point_2}}
+                {% if listing.para_1 %}
+                <li class="list-group-item text-primary lead">
+                  <i class="fas fa-pencil-alt"></i> {{listing.para_1}}
                 </li>
                 {% endif %}
-                {% if listing.point_3 %}
-                <li class="list-group-item text-secondary">
-                  <i class="fas fa-pencil-alt"></i> {{listing.point_3}}
+                {% if listing.para_2 %}
+                <li class="list-group-item text-primary lead">
+                  <i class="fas fa-pencil-alt"></i> {{listing.para_2}}
                 </li>
                 {% endif %}
-              </ul>
+                {% if listing.para_3 %}
+                <li class="list-group-item text-primary lead">
+                  <i class="fas fa-pencil-alt"></i> {{listing.para_3}}
+                </li>
+                {% endif %}
+              <!-- </ul>
             </div>
-            <div class="col-md-6">
-              <ul class="list-group list-group-flush">
-                {% if listing.point_4 %}
-                <li class="list-group-item text-secondary">
-                  <i class="fas fa-pencil-alt"></i> {{listing.point_4}}
+            <div class="col-md-12">
+              <ul class="list-group list-group-flush"> -->
+                {% if listing.para_4 %}
+                <li class="list-group-item text-primary lead">
+                  <i class="fas fa-pencil-alt"></i> {{listing.para_4}}
                 </li>
                 {% endif %}
-                {% if listing.point_5 %}
-                <li class="list-group-item text-secondary">
-                  <i class="fas fa-pencil-alt"></i> {{listing.point_5}}
+                {% if listing.para_5 %}
+                <li class="list-group-item text-primary lead">
+                  <i class="fas fa-pencil-alt"></i> {{listing.para_5}}
                 </li>
                 {% endif %}
-                {% if listing.point_6 %}
-                <li class="list-group-item text-secondary">
-                  <i class="fas fa-pencil-alt"></i> {{listing.point_6}}
+                {% if listing.para_6 %}
+                <li class="list-group-item text-primary lead">
+                  <i class="fas fa-pencil-alt"></i> {{listing.para_6}}
                 </li>
                 {% endif %}
-                {% if listing.point_7 %}
-                <li class="list-group-item text-secondary">
-                  <i class="fas fa-pencil-alt"></i> {{listing.point_7}}
+                {% if listing.para_7 %}
+                <li class="list-group-item text-primary lead">
+                  <i class="fas fa-pencil-alt"></i> {{listing.para_7}}
                 </li>
                 {% endif %}
               </ul>
@@ -105,7 +105,7 @@
             <img class="card-img-top" src="{{support.photo.url}}" alt="Customer Support">
             <div class="card-body">
               <h5 class="card-title">{{support.designation}}</h5>
-              <h6 class="text-secondary">{{support.name}}</h6>
+              <!-- <h6 class="text-secondary">{{support.name}}</h6> -->
             </div>
           </div>
           <button class="btn-primary btn-block btn-lg" data-toggle="modal" data-target="#inquiryModal">Make An Inquiry</button>

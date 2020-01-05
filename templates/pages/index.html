@@ -44,10 +44,6 @@
                 <h4 class="text-primary">{{claim.title}}</h4>
               </div>
               <hr>
-              <div class="row py-2 text-secondary">
-                <div class="col-12">{{claim.point_main}}</div>
-              </div>
-              <hr>
               <a href="{% url 'claim' claim.id %}" class="btn btn-custom btn-block">Learn More</a>
             </div>
           </div>
@@ -67,6 +63,19 @@
   <section id="services" class="py-5 bg-secondary text-white">
     <div class="container">
       <div class="row text-center">
+        <div class="col-md-4">
+          <i class="fas fa-hand-holding-usd fa-4x mr-4"></i>
+          <hr>
+          <h3>Queries</h3>
+          <p style="text-align: justify;">We stand by you at each stage of Customer Lifecycle:</p>
+          <ul style="text-align: justify;">
+            <li>Advice on Best Insurance policy catering to your needs, if not already taken.</li>
+            <li>Effects of Medical History & Lifestyle related Disease on existing or new Policy</li>
+            <li>Simple and easy to understand explanation of your Insurance Policy and its Coverage</li>
+            <li>Suggestions on Best Hospitals to visit depending on the treatment required or foreseen</li>
+            <li>Studying of existing Policy documents to navigate through the claim process</li>
+          </ul>
+        </div>
         <div class="col-md-4">
               <i class="fas fa-comment fa-4x mr-4"></i>
               <hr>
@@ -92,19 +101,6 @@
                 <li>Appeal rejected or unpaid claims by insurance companies on your behalf</li>
                 <li>Attending joint meeting with the Surveyors/Insurers to discuss any claim related issues, if they require to do so</li>
                 <li>Negotiating a fair settlement with the Surveyor/Insurer in consultation with the client</li>
-              </ul>
-            </div>
-            <div class="col-md-4">
-              <i class="fas fa-hand-holding-usd fa-4x mr-4"></i>
-              <hr>
-              <h3>Queries</h3>
-              <p style="text-align: justify;">We stand by you at each stage of Customer Lifecycle:</p>
-              <ul style="text-align: justify;">
-                <li>Advice on Best Insurance policy catering to your needs, if not already taken.</li>
-                <li>Effects of Medical History & Lifestyle related Disease on existing or new Policy</li>
-                <li>Simple and easy to understand explanation of your Insurance Policy and its Coverage</li>
-                <li>Suggestions on Best Hospitals to visit depending on the treatment required or foreseen</li>
-                <li>Studying of existing Policy documents to navigate through the claim process</li>
               </ul>
             </div>
       </div>

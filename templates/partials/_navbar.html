@@ -26,16 +26,7 @@
                   class="nav-item mr-3"
                   {%endif%}
                   >
-                    <a class="nav-link" href="{% url 'about' %}">About</a>
-                  </li>
-                  <li 
-                  {%if 'contact-us' in  request.path %}
-                  class="nav-item active mr-3"
-                  {%else%}
-                  class="nav-item mr-3"
-                  {%endif%}
-                  >
-                    <a class="nav-link" href="{% url 'contactus' %}">Contact Us</a>
+                    <a class="nav-link" href="{% url 'about' %}">About Us</a>
                   </li>
                   <li 
                   {%if 'claims' in  request.path %}
@@ -45,6 +36,15 @@
                   {%endif%}
                   >
                     <a class="nav-link" href="{% url 'claims' %}">Claims</a>
+                  </li>
+                  <li 
+                  {%if 'contact-us' in  request.path %}
+                  class="nav-item active mr-3"
+                  {%else%}
+                  class="nav-item mr-3"
+                  {%endif%}
+                  >
+                    <a class="nav-link" href="{% url 'contactus' %}">Contact Us</a>
                   </li>
                 </ul>
         
