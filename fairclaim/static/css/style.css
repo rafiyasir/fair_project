@@ -12,8 +12,21 @@ img {
   width: 80px; }
 
 .navbar {
-  opacity: 0.9;
-  text-transform: uppercase; }
+  opacity: 1;
+  text-transform: uppercase;
+  padding: 0.1rem 1rem !important; }
+  .navbar .navbar-nav .nav-item strong{
+    color: rgb(240, 240, 240) !important;
+  }
+
+  .navbar .navbar-nav .nav-item.active strong{
+    color: rgb(138, 222, 149) !important;
+  }
+ 
+  #top-bar {
+    opacity: 1;
+    background-color: #fff;
+  }
 
 .social a {
   margin-right: 0.4rem; }
@@ -68,7 +81,7 @@ img {
     min-height: 270px; }
 
 #work {
-  padding: 6rem 0; }
+  padding: 2rem 0; }
 
 .listing-preview a {
   position: relative; }
@@ -128,9 +141,16 @@ img {
     #showcase p {
     font-size: 17px; }
   #top-bar {
-    text-align: center; }
+    text-align: center;
+    padding: 0.1rem !important; }
     #top-bar .social {
-      text-align: center !important; }   
+      text-align: center !important; } 
+      #top-bar .custom{
+        padding : 0.1rem !important;
+      }
+      #top-bar .custom p{
+        margin-bottom : 0rem !important;
+      }  
     }
 
 @media (max-width: 576px) {
@@ -138,6 +158,12 @@ img {
     font-size: 30px; }
   #showcase-inner h1 {
     font-size: 40px; } 
+    #top-bar .custom{
+      padding : 0.1rem !important;
+    }
+    #top-bar .custom p{
+      margin-bottom : 0rem !important;
+    }
   /* page transiton */
 #para-1 {
   text-align: center;
@@ -152,9 +178,10 @@ img {
 
     /*custom */
     .bg-custom,.btn-custom{
-  background-color: #151073;
-  color: #ffffff;
+  background-color: #151073 !important;
+  color: #ffffff !important;
 }
+
 .page-item.active .page-link {
     z-index: 1;
     color: #fff;
