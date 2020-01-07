@@ -72,3 +72,43 @@ class TypeWriter {
     // Init TypeWriter
     new TypeWriter(txtElement, words, wait);
   }
+
+  function altEmail(){
+    const email = document.querySelector('.alt-email');
+    if(email.className === 'fas fa-envelope-open custom-color alt-email')
+      email.className = 'fas fa-envelope-open-text custom-color alt-email';
+    else if(email.className === 'fas fa-envelope-open-text custom-color alt-email')
+      email.className = 'fas fa-envelope custom-color alt-email';
+    else
+      email.className = 'fas fa-envelope-open custom-color alt-email';
+  }
+
+  function altPhone() {
+    const phone0 = document.getElementById('phone-0');
+    const phone1 = document.getElementById('phone-1');
+    const phone2 = document.getElementById('phone-2');
+    const phone3 = document.getElementById('phone-3');
+    const phone4 = document.getElementById('phone-4');
+    if(phone0.className === ''){
+      phone0.className = 'd-none';
+      phone1.className = '';
+    }
+    else if(phone1.className === ''){
+      phone1.className = 'd-none';
+      phone2.className = '';
+    }
+    else if(phone2.className === ''){
+      phone2.className = 'd-none';
+      phone3.className = '';
+    }
+    else if(phone3.className === ''){
+      phone3.className = 'd-none';
+      phone4.className = '';
+    }
+    else if(phone4.className === ''){
+      phone4.className = 'd-none';
+      phone0.className = '';
+    }
+  }
+  setInterval(() => altPhone(), 1000);
+  setInterval(() => altEmail(), 1000);

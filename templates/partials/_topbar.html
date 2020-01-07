@@ -1,3 +1,4 @@
+    {% load static %}
     <!-- Top Bar -->
     <section id="top-bar" class="pt-3 solid">
       <div class="container">
@@ -6,10 +7,14 @@
             <p style="font-weight:500;font-size:1.8rem;"><strong>Fair Claim Solutions</strong></p>
           </div>
           <div class="col-md-4 p-3 custom">
-          <i class="fas fa-phone custom-color"></i> +91-9999858079 (Mon-Sat | 10 AM-6PM)
+            <img src="{%static 'img/phone-0.png' %}" alt="" style="width: 5%;" id="phone-0" class="">
+            <img src="{%static 'img/phone-1.png' %}" alt="" style="width: 5%;" id="phone-1" class="d-none">
+            <img src="{%static 'img/phone-2.png' %}" alt="" style="width: 5%;" id="phone-2" class="d-none">
+            <img src="{%static 'img/phone-3.png' %}" alt="" style="width: 5%;" id="phone-3" class="d-none">
+            <img src="{%static 'img/phone-4.png' %}" alt="" style="width: 5%;" id="phone-4" class="d-none"> +91-9999858079 (Mon-Sat | 10 AM-6PM)
         </div>
           <div class="col-md-4 p-3 custom">
-            <i class="fas fa-envelope-open custom-color"></i> support@fairclaimsolutions.com
+            <i class="fas fa-envelope custom-color alt-email"></i> support@fairclaimsolutions.com
           </div>
         </div>
       </div>
